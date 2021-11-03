@@ -1,9 +1,10 @@
 info = env.APP_NAME
 echo env.APP_NAME
+build_id = ${env.BUILD_ID}
 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
         stage('Configuration Setup') {
             echo "Configuration setup"
-            echo env.APP_NAME
+            echo ${build_id}
         }
         stage('Testing Setup') {
             echo "Testing Setup"

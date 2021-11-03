@@ -1,2 +1,2 @@
 info = env.APP_NAME
-echo ${info}
+echo env.APP_NAME

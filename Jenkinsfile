@@ -15,6 +15,7 @@ def env_testvar = env.BUILD_ID
         }
         stage('Copy Image') {
             echo "Copy Image"
+            sh "mkdir -p /tmp/test"
         }
          stage('Stage Image') {
             echo "Staging image"

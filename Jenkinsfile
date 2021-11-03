@@ -4,7 +4,7 @@ build_id = ${env.BUILD_ID}
 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
         stage('Configuration Setup') {
             echo "Configuration setup"
-            echo ${build_id}
+            sh "echo ${build_id}"
         }
         stage('Testing Setup') {
             echo "Testing Setup"

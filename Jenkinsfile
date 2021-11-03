@@ -2,17 +2,17 @@ info = env.APP_NAME
 echo env.APP_NAME
 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
         stage('Configuration Setup') {
-            echo "Stage 1"
+            echo "Configuration setup"
         }
         stage('Testing Setup') {
-            echo "Stage 1"
+            echo "Testing Setup"
         }
         stage('SonarQube scan') {
-            echo "Stage 1"
+            echo "SonarQube Scan in progress"
         }
         stage('Copy Image') {
-            echo "Stage 1"
+            echo "Copy Image"
         }
          stage('Stage Image') {
-            echo "Stage 1"
+            echo "Staging image"
         }

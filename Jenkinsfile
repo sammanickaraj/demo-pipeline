@@ -1,5 +1,8 @@
+def random_var = 'Hi Sam'
+
         stage('Configuration Setup') {
             echo "Configuration setup"
+            sh "${random_var}"
         }
         stage('Testing Setup') {
             echo "Testing Setup"

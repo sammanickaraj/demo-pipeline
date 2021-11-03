@@ -3,6 +3,7 @@ echo env.APP_NAME
 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
         stage('Configuration Setup') {
             echo "Configuration setup"
+            echo env.APP_NAME
         }
         stage('Testing Setup') {
             echo "Testing Setup"

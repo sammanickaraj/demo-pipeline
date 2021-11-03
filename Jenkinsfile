@@ -1,9 +1,5 @@
-info = env.APP_NAME
-echo env.APP_NAME
-def random_var = "Hi Sam"
         stage('Configuration Setup') {
             echo "Configuration setup"
-            sh "echo ${random_var}"
         }
         stage('Testing Setup') {
             echo "Testing Setup"

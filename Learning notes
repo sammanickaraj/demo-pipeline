@@ -1,2 +1,3 @@
 ####
 Found cloudbees has "folder plus plugin to store variables which will be then used as env variables with in the job
+https://www.jenkins.io/doc/pipeline/steps/ - To find step reference used in pipeline(sh, echo)

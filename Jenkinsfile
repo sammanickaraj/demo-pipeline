@@ -14,9 +14,8 @@ node {
             checkout scm
         }
         stage('Openshift Login') {
-            sh 'oc login -u kubeadmin -p HqC3I-wgtiB-q7qCf-KEsuK https://api.crc.testing:6443'
-            set +e
-        }
+            sh "oc login -u kubeadmin -p HqC3I-wgtiB-q7qCf-KEsuK https://api.crc.testing:6443 --insecure-skip-tls-verify"
+            }
         stage('Copy Image') {
             echo "Copy Image"
         }

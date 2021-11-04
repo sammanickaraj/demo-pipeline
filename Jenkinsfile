@@ -15,6 +15,7 @@ node {
         }
         stage('Openshift Login') {
             sh 'oc login -u kubeadmin -p HqC3I-wgtiB-q7qCf-KEsuK https://api.crc.testing:6443'
+            set +e
         }
         stage('Copy Image') {
             echo "Copy Image"

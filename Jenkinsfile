@@ -8,7 +8,7 @@
 // createImage()
 
 
-library identifier: 'shared-library-sam-com@v1.o',
+library identifier: 'shared-library-sam-com@v1.0',
     // 'mylibraryname' is just an identifier, it can be anything you like
     // 'master' refers to a valid git ref (branch)
     retriever: modernSCM([

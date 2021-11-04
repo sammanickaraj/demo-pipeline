@@ -13,13 +13,11 @@ node {
         stage('Checkout SCM') {
             checkout scm
         }
-        stage('SonarQube scan') {
-            echo "SonarQube Scan in progress"
-            
+        stage('Openshift Login') {
+            sh 'oc login -u kubeadmin -p HqC3I-wgtiB-q7qCf-KEsuK https://api.crc.testing:6443'
         }
         stage('Copy Image') {
             echo "Copy Image"
-            sh "mkdir /tmp/test_unique"
         }
          stage('Stage Image') {
             echo "Staging image"
